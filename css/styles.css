@@ -47,7 +47,7 @@
     color: var(--secondary-color); /* Here I change the text color on hover */
     background-color: var(--dark-color);  /* I change the background color on hover */
   }
-  }
+  
   /* define the properties for the items in the banner */
   .banner img {
     height: 5rem;
