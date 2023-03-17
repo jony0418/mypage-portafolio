@@ -1,0 +1,215 @@
+/* Set CSS variables for colors and other values */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #65b8db;
+    --light-color: #bcbcbc;
+    --dark-color: #343a40;
+    --font-size: 1rem;
+    --line-height: 1.5;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--light-color);
+    line-height: var(--line-height);
+  }
+
+  /* Apply CSS styles to header */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-color);
+    padding: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  nav {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    margin-right: 2rem;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-size: 1.4rem;
+  }
+  
+  li a:hover {
+    color: var(--secondary-color);
+    background-color: var(--dark-color);
+  }
+  
+  .banner img {
+    height: 5rem;
+    border-radius: 50%;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  .banner {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding: 2% 4%;
+  }
+
+  .banner div{
+    flex: 0 0 70%
+  }
+
+  .banner h2{
+    color: var(--dark-color);
+    font-size: 2vw;
+    line-height: 1;
+    background-color: var(--secondary-color);
+  }
+
+  p{
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0px;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    max-width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h3 {
+    text-align: right;
+    border-right: 4px solid var(--primary-color);
+    font-size: 2vw;
+    padding: 15px;
+    padding-right: 15px;
+  }
+  
+  .work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .work-grid a {
+    flex: 1 0 33%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1rem 1rem rgba(2, 1, 1, 0.15);
+  }
+  
+  .work-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-out;
+    align-items: flex-end;
+    display: flex;
+    max-height: 150px;
+    height: 150px;
+    flex-basis: calc(50% - 1em);
+    border: 5px solid var(--secondary);
+
+  }
+
+  .work-grid:first-child {
+    width: 400px;
+    height: auto;
+  }
+  
+  h4 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+  }
+   
+  /* Apply CSS styles to footer */
+  footer {
+    margin-bottom: 2rem;
+    max-width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 0 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    nav {
+      justify-content: center;
+    }
+
+    h3 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 4vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .work-grid,
+    .work-grid :first-child{
+      flex-basis: 100%;
+    }
+  
+    .work-grid :first-child{
+      min-height: 150px;
+    }
+  
+    h1 {
+      width: 100%;
+      padding: 2px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+
+    .banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    footer ul{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
