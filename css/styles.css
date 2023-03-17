@@ -49,7 +49,7 @@
   }
   
   /* define the properties for the items in the banner */
-  .banner img {
+  .banner div img {
     height: 5rem;
     border-radius: 50%;
   }
