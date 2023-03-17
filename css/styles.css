@@ -48,12 +48,6 @@
     background-color: var(--dark-color);  /* I change the background color on hover */
   }
   
-  /* define the properties for the items in the banner */
-  .banner div img {
-    height: 5rem;
-    border-radius: 50%;
-  }
-  
   h1 {
     margin: 0;
     font-size: 4vw;
@@ -102,6 +96,7 @@
   
   h3 {
     text-align: right;
+    color: var(--dark-color);
     border-right: 4px solid var(--primary-color);
     font-size: 2vw;
     padding: 15px;
@@ -154,25 +149,13 @@
     display: flex;
     align-items: center;
   }
-  @media screen and (min-width: 980px) {
-    .banner img {
-      height: 5rem;
-      border-radius: 50%;
-    }
-  }
+
 /* Here are the responsive styles for screens less than or equal to 980px wide */
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 0 0;
       justify-content: center;
       text-align: center;
-    }
-  
-    .banner img {
-      height: 3rem;
-      border-radius: 50%;
-      display: absolute;
-
     }
     
     h1 {
