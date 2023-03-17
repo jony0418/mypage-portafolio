@@ -66,12 +66,13 @@
     height: 25vh;
     display: flex;
     align-items: flex-end;
-    justify-content: right;
+    text-align: center;
+    justify-content: center;
     padding: 2% 4%;
   }
 
   .banner div{
-    flex: 0 0 70%
+    flex: 0 0 50%
   }
 
   .banner h2{
@@ -120,20 +121,13 @@
   
   .work-grid img {
     width: 100%;
-    height: auto;
-    transition: transform 1s ease-out;
-    align-items: flex-end;
     display: flex;
-    max-height: 150px;
-    height: 150px;
-    flex-basis: calc(50% - 1em);
     border: 5px solid var(--secondary);
-
+    box-sizing: content-box;
   }
 
-  .work-grid:first-child {
-    width: 400px;
-    height: auto;
+  .work-grid a:first-child {
+  flex: 100%;
   }
   
   h4 {
@@ -165,6 +159,13 @@
       text-align: center;
     }
   
+    .banner img {
+      height: 3rem;
+      border-radius: 50%;
+      display: absolute;
+
+    }
+    
     h1 {
       width: 100%;
       padding: 5px;
