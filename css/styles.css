@@ -1,18 +1,18 @@
 /* Set CSS variables for colors and other values */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #65b8db;
-    --light-color: #bcbcbc;
-    --dark-color: #343a40;
-    --font-size: 1rem;
-    --line-height: 1.5;
-  }
+    --primary-color: #007bff; /* Primary color for the website */
+    --secondary-color: #65b8db; /* Secondary color for the website */
+    --light-color: #bcbcbc; /* Light color for backgrounds */
+    --dark-color: #343a40; /* Dark color for text */
+    --font-size: 1rem; /* Base font size */
+    --line-height: 1.5; /* Base line height */
+}
   body{
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--light-color);
-    line-height: var(--line-height);
+    background-color: var(--light-color); /* I add the light color as the background color for the body */
+    line-height: var(--line-height); /* I apply the line height */
   }
 
   /* Apply CSS styles to header */
@@ -23,9 +23,9 @@
     justify-content: space-between;
     background-color: var(--light-color);
     padding: 15px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add a shadow to the header */
   }
-  
+
   nav {
     list-style: none;
     flex-direction: row;
@@ -33,21 +33,22 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  
+   /* I apply the needed color and font size to the list items. I also add a hover effect to the list items. */
   li {
     margin-right: 2rem;
-    color: var(--dark-color);
+    color: var(--dark-color); 
     text-decoration: none;
-    font-size: var(--font-size);
+    font-size: var(--font-size); 
     line-height: var(--line-height);
     font-size: 1.4rem;
   }
   
   li a:hover {
-    color: var(--secondary-color);
-    background-color: var(--dark-color);
+    color: var(--secondary-color); /* Here I change the text color on hover */
+    background-color: var(--dark-color);  /* I change the background color on hover */
   }
-  
+  }
+  /* define the properties for the items in the banner */
   .banner img {
     height: 5rem;
     border-radius: 50%;
@@ -58,12 +59,13 @@
     font-size: 4vw;
     line-height: 1;
   }
-  
+  /* I added the image to the banner and I also added a flexbox to the banner 
+  and I set the text to be centered. */
   .banner {
     background-image: url(../images/banner.png);
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 25vh; /* Here I set the banner height */
     display: flex;
     align-items: flex-end;
     text-align: center;
@@ -113,7 +115,7 @@
   }
   
   .work-grid a {
-    flex: 1 0 33%;
+    flex: 1 0 33%; /* Here are define the flex-grow, flex-shrink, and flex-basis */
     margin-right: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 1rem 1rem rgba(2, 1, 1, 0.15);
@@ -125,7 +127,8 @@
     border: 5px solid var(--secondary);
     box-sizing: content-box;
   }
-
+  
+ /* I added a media query to change the flex-basis to 100% for the first child of the work-grid class. */
   .work-grid a:first-child {
   flex: 100%;
   }
@@ -152,6 +155,7 @@
     align-items: center;
   }
 
+/* Here are the responsive styles for screens less than or equal to 980px wide */
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 0 0;
@@ -187,6 +191,8 @@
     }
   }
   
+  /* Here I set the responsive styles for screens less than or equal to 768px wide */
+
   @media screen and (max-width: 768px) {
     .work-grid,
     .work-grid :first-child{
